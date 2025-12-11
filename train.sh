@@ -14,6 +14,7 @@ echo "Starting Training Pipeline"
 echo "Input Data: $INPUT_DATA_PATH"
 
 mkdir -p datasets
+mkdir -p models/oof
 
 if [ "$INPUT_DATA_PATH" = "$TARGET_PATH" ]; then
     echo "[Setup] Input file is already in the target location. Skipping symlink creation."
